@@ -7,6 +7,7 @@ import ProfileSection from '../components/react/profile/ProfileSection';
 import ReadOnlyField from '../components/react/profile/ProfileReadOnlyField';
 import ProfileField from '../components/react/profile/ProfileField';
 import { HeadMetadata } from '../components/react/navigation/metadata';
+import { APP_TITLE } from '../components/react/navigation/page-names';
 
 function Profile() {
     const [profile, setProfile] = useState<any>();
@@ -38,7 +39,7 @@ function Profile() {
     return (
         <Grid container padding={2} gap={2}>
             <HeadMetadata
-                title={`Template / ${profileTitle}`}
+                title={`${APP_TITLE} / ${profileTitle}`}
             />
             <Grid item xs={12}>
                 <Typography variant="h5" component="h2">
@@ -62,7 +63,7 @@ function Profile() {
             <Grid item xs={12}>
                 <ProfileSection>
                     <Typography variant="h6" component="h3">
-                        Template Profile
+                        {APP_TITLE} Profile
                     </Typography>
 
                     <ProfileField

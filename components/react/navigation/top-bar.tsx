@@ -7,6 +7,7 @@ import { LogInButton } from '../auth/login';
 import Link from 'next/link';
 import { Button } from '@mui/material';
 import MainMenu from './main-menu';
+import { APP_TITLE } from './page-names';
 
 const flexGrowStyle = { flexGrow: 1 };
 const linkStyle = { textDecoration: 'none', color: 'inherit' };
@@ -19,7 +20,7 @@ export default function TopBar() {
           <MainMenu />
           
           <Typography variant="h5" component="h1" mr={2}>
-            <Link href="/" style={linkStyle}>Template</Link>
+            <Link href="/" style={linkStyle}>{APP_TITLE}</Link>
           </Typography>
 
           <Button variant="contained" color="primary" disableElevation>

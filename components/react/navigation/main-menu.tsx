@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { Menu as MenuIcon, MenuBookTwoTone, CoPresentTwoTone, ArchitectureTwoTone, StackedLineChartTwoTone, CasinoTwoTone } from "@mui/icons-material";
 import { IconButton, Menu, MenuItem, Typography } from "@mui/material";
+import { APP_TITLE } from "./page-names";
 
 const unselectableMenuItemStyle = {
     pointerEvents: 'none',
@@ -100,7 +101,7 @@ function MainMenu() {
                     onClick={handleClose}
                 >
                     <CasinoTwoTone />
-                    Template
+                    {APP_TITLE}
                 </PageMenuItem>
                 <PageMenuItem
                     href="/profile"

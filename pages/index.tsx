@@ -5,6 +5,7 @@ import { Google } from '@mui/icons-material';
 import { handleLogIn } from '../components/react/auth/login';
 import { useSession } from 'next-auth/react';
 import { HeadMetadata } from '../components/react/navigation/metadata';
+import { APP_TITLE } from '../components/react/navigation/page-names';
 
 function Home() {
     const { data: session } = useSession();
@@ -20,7 +21,7 @@ function Home() {
     return (
         <Grid container padding={2}>
             <HeadMetadata
-                title="Template"
+                title={APP_TITLE}
             />
             <Grid item xs={12} pb={2} pl={2}>
                 <br />
