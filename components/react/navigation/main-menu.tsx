@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { Menu as MenuIcon, MenuBookTwoTone, CoPresentTwoTone, ArchitectureTwoTone, StackedLineChartTwoTone, CasinoTwoTone } from "@mui/icons-material";
+import { Menu as MenuIcon, BadgeTwoTone, CottageTwoTone, AssessmentTwoTone } from "@mui/icons-material";
 import { IconButton, Menu, MenuItem, Typography } from "@mui/material";
 import { APP_TITLE } from "./page-names";
 
@@ -91,7 +91,7 @@ function MainMenu() {
                     href="/"
                     onClick={handleClose}
                 >
-                    <MenuBookTwoTone />
+                    <AssessmentTwoTone />
                     Example
                 </PageMenuItem>
                 <MenuDivider />
@@ -100,14 +100,14 @@ function MainMenu() {
                     href="/"
                     onClick={handleClose}
                 >
-                    <CasinoTwoTone />
+                    <CottageTwoTone />
                     {APP_TITLE}
                 </PageMenuItem>
                 <PageMenuItem
                     href="/profile"
                     onClick={handleClose}
                 >
-                    <StackedLineChartTwoTone />
+                    <BadgeTwoTone />
                     Profile
                 </PageMenuItem>
             </Menu>
