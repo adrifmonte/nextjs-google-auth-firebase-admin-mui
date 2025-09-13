@@ -1,0 +1,27 @@
+{
+  "name": "nextjs-google-auth-firebase-admin-mui",
+  "version": "1.0.0",
+  "description": "template for admin projects",
+  "main": "index.js",
+  "repository": "git@github.com:adrifmonte/nextjs-google-auth-firebase-admin-mui.git",
+  "author": "adrifmonte@gmail.com",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.13",
+    "@mui/material": "^5.14.13",
+    "firebase-admin": "^11.11.0",
+    "next": "^13.5.4",
+    "next-auth": "^4.23.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.8.4",
+    "typescript": "5.2.2"
+  }
+}
